@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+{% endblock %}
+
+{% block body %}
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+  <div class="container">
+    <h1 class="text-center logo my-3">
+      <a href="{% url 'home' %}">Dreddit</a>
+    </h1>
+    <h1 class="text-center sub-logo my-1">
+        The Last Page of The Internet
+    </h1>
+    {% block content %}
+    {% endblock %}
+  </div>
+{% endblock %}

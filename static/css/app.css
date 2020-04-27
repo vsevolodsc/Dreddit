@@ -1,0 +1,11 @@
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-image: url(../img/serious.png);
+}
+
+.dropdown-menu{
+  left:0;
+  right:0;
+}

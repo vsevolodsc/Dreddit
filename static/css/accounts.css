@@ -1,0 +1,23 @@
+body {
+  background-image: url(../img/serious.png);
+}
+
+.logo {
+  font-family: 'Ubuntu', cursive;
+}
+
+.logo a {
+  color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active {
+  text-decoration: none;
+}
+
+.sub-logo{
+  font-family: 'Ubuntu', cursive;
+  font-size: larger;
+}
+
+
