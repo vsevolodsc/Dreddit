@@ -62,12 +62,10 @@ MIDDLEWARE = [
     'djangosecure.middleware.SecurityMiddleware',
 ]
 
-SECURE_SSL_REDIRECT = True
 SECURE_FRAME_DENY = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 SESSION_COOKIE_SECURE = True
-SESSION_COOKIE_HTTPONLY = True
 
 
 ROOT_URLCONF = 'nci_web.urls'
