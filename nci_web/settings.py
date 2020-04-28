@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'djangosecure.middleware.SecurityMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 ]
 
 SECURE_FRAME_DENY = True
