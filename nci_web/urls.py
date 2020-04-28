@@ -15,7 +15,7 @@ Including another URLconf
 """
 from boards import views as board_views
 from django.contrib import admin
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib.auth import views as auth_views
 from accounts import views as accounts_views
 
@@ -23,7 +23,8 @@ from accounts import views as accounts_views
 urlpatterns = [
     # Login, Logout, Signup routes
     url(r'^$', board_views.BoardListView.as_view(), name='home'),
-    url(r'admin/', admin.site.urls),
+    url(r'^admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    url(r'^the_all_fathers_home/', admin.site.urls),
     url(r'^signup/$', accounts_views.signup, name='signup'),
     url(r'^logout/$', auth_views.LogoutView.as_view(), name='logout'),
     url(r'^login/$', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
